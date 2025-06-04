@@ -1,0 +1,11 @@
+mmengine
+plyfile
+html4vision
+supervision
+trimesh
+openai
+scikit-learn
+torch==2.5.1
+torchvision==0.20.1
+xformers==0.0.28.post3
+-e segmentation/SAM
