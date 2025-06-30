@@ -3,7 +3,7 @@
 > **OmniSpatial** diagnoses the limits of today's vision-language models (VLMs) on **higher-order spatial cognition**.  
 > It spans **50 fine-grained tasks** grouped into **4 dimensions**—dynamic reasoning, complex spatial logic, spatial interaction and perspective-taking—covering **1.3K samples** and **1.5K question-answer pairs**.
 
-Mengdi Jia *, [Zekun Qi](https://qizekun.github.io/) *, Shaochen Zhang, Wenyao Zhang, Xinqiang Yu, [Jiawei He](https://jiaweihe.com/), [He Wang](https://hughw19.github.io/) and [Li Yi](https://ericyi.github.io/).
+Mengdi Jia *, [Zekun Qi](https://qizekun.github.io/) *, Shaochen Zhang, [Wenyao Zhang](https://zhangwenyao1.github.io/), Xinqiang Yu, [Jiawei He](https://jiaweihe.com/), [He Wang](https://hughw19.github.io/) and [Li Yi](https://ericyi.github.io/).
 
 [![Project Page](https://img.shields.io/badge/Project-Page-Green.svg)](https://qizekun.github.io/omnispatial/)
 [![Paper PDF](https://img.shields.io/badge/Paper-PDF-orange.svg)](https://arxiv.org/abs/2506.03135)
