@@ -218,5 +218,3 @@ Please check individual images for additional constraints.
 ## 🙏 Acknowledgements
 
 This project builds upon open-source efforts including **Segment Anything**, **InstantMesh**, **Qwen-VL**, **InternVL**, and the many contributors of the open-source VLM community. Special thanks to our annotator team for their meticulous QA work.
-
----
