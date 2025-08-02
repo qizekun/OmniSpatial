@@ -3,7 +3,7 @@
 > **OmniSpatial** diagnoses the limits of today's vision-language models (VLMs) on **higher-order spatial cognition**.  
 > It spans **50 fine-grained tasks** grouped into **4 dimensions**—dynamic reasoning, complex spatial logic, spatial interaction and perspective-taking—covering **1.3K samples** and **1.5K question-answer pairs**.
 
-Mengdi Jia *, [Zekun Qi](https://qizekun.github.io/) *, Shaochen Zhang, Wenyao Zhang, Xinqiang Yu, [Jiawei He](https://jiaweihe.com/), [He Wang](https://hughw19.github.io/) and [Li Yi](https://ericyi.github.io/).
+Mengdi Jia *, [Zekun Qi](https://qizekun.github.io/) *, [Shaochen Zhang](https://scholar.google.com/citations?user=S8hl2msAAAAJ), [Wenyao Zhang](https://zhangwenyao1.github.io/), [Xinqiang Yu](https://xinqiangyu.github.io/yuxinqiang.github.io/), [Jiawei He](https://jiaweihe.com/), [He Wang](https://hughw19.github.io/) and [Li Yi](https://ericyi.github.io/).
 
 [![Project Page](https://img.shields.io/badge/Project-Page-Green.svg)](https://qizekun.github.io/omnispatial/)
 [![Paper PDF](https://img.shields.io/badge/Paper-PDF-orange.svg)](https://arxiv.org/abs/2506.03135)
@@ -50,14 +50,13 @@ cd OmniSpatial
 **Open-source VLMs**
 
 ```bash
-pip install torch==2.5.1 torchvision==0.20.1 transformers==4.49.0 qwen-vl-utils[decord]==0.0.8 triton accelerate timm ninja
-MAX_JOBS=64 pip install -v flash-attn --no-build-isolation
+pip install torch==2.5.1 torchvision==0.20.1 transformers==4.49.0 qwen-vl-utils[decord]==0.0.8 openai==1.81.0 triton accelerate timm ninja
+pip install flash-attn==2.5.6 --no-build-isolation
 ```
 
 **Closed-source (API) VLMs**
 
 ```bash
-pip install openai==1.81.0
 export OPENAI_API_KEY="sk-..."
 # optional: export OPENAI_API_BASE="https://api.openai.com/v1"
 ```
@@ -92,11 +91,11 @@ dataset/
 python api_eval.py --model_id gpt-4.1 --prompt_type manual_cot --eval_type re
 
 # Example: local Qwen-VL-2.5-3B
-cd vlm_eval
+cd vlms_eval
 python qwenvl_eval.py --model_id Qwen/Qwen2.5-VL-3B-Instruct --prompt_type manual_cot --eval_type re
 
 # Example: parallel evaluation
-cd vlm_eval
+cd vlms_eval
 python parallel_eval.py --model qwenvl --model_id Qwen/Qwen2.5-VL-3B-Instruct --group 8 --visible_nodes 0,1,2,3,4,5,6,7
 ```
 
