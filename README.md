@@ -50,8 +50,8 @@ cd OmniSpatial
 **Open-source VLMs**
 
 ```bash
-pip install torch==2.5.1 torchvision==0.20.1 transformers==4.49.0 qwen-vl-utils[decord]==0.0.8 triton accelerate timm ninja
-MAX_JOBS=64 pip install -v flash-attn --no-build-isolation
+pip install torch==2.5.1 torchvision==0.20.1 transformers==4.49.0 qwen-vl-utils[decord]==0.0.8 triton accelerate timm
+pip install flash-attn --no-build-isolation
 ```
 
 **Closed-source (API) VLMs**
@@ -70,10 +70,9 @@ export OPENAI_API_KEY="sk-..."
 # export HF_ENDPOINT="https://hf-mirror.com"
 mkdir -p dataset
 huggingface-cli download --resume-download qizekun/OmniSpatial --local-dir dataset --repo-type dataset
-find dataset/ -name '*.zip' -exec unzip -o {} -d dataset/ \;
-rm -f dataset/*.zip && rm -rf dataset/__MACOSX
 ```
-The dataset is downloaded to `dataset/`, and the structure is as follows:
+In this leaderboard, we use `OmniSpatial_1.5K.zip`, and the `OmniSpatial_full_8.4K.zip` is a larger version with 8.4K samples, which includes the same 1.5K samples plus additional 6.9K samples for future research.
+The dataset is downloaded to `dataset/`, unzip `OmniSpatial_1.5K.zip` and let the structure as follows:
 ```
 dataset/
 ├── Complex_Logic/
