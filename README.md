@@ -1,7 +1,7 @@
 # OmniSpatial: Towards Comprehensive Spatial Reasoning Benchmark for Vision Language Models
 
 > **OmniSpatial** diagnoses the limits of today's vision-language models (VLMs) on **higher-order spatial cognition**.  
-> It spans **50 fine-grained tasks** grouped into **4 dimensions**—dynamic reasoning, complex spatial logic, spatial interaction and perspective-taking—covering **1.3K samples** and **1.5K question-answer pairs**.
+> It spans **50 fine-grained tasks** grouped into **4 dimensions**—dynamic reasoning, complex spatial logic, spatial interaction and perspective-taking.
 
 Mengdi Jia *, [Zekun Qi](https://qizekun.github.io/) *, Shaochen Zhang, [Wenyao Zhang](https://zhangwenyao1.github.io/), Xinqiang Yu, [Jiawei He](https://jiaweihe.com/), [He Wang](https://hughw19.github.io/) and [Li Yi](https://ericyi.github.io/).
 
@@ -71,8 +71,8 @@ export OPENAI_API_KEY="sk-..."
 mkdir -p dataset
 huggingface-cli download --resume-download qizekun/OmniSpatial --local-dir dataset --repo-type dataset
 ```
-In this leaderboard, we use `OmniSpatial_1.5K.zip`, and the `OmniSpatial_full_8.4K.zip` is a larger version with 8.4K samples, which includes the same 1.5K samples plus additional 6.9K samples for future research.
-The dataset is downloaded to `dataset/`, unzip `OmniSpatial_1.5K.zip` and let the structure as follows:
+In this leaderboard, we use `OmniSpatial-test.zip`, and the `OmniSpatial-train.zip` is a larger version for training exploration.
+The dataset is downloaded to `dataset/`, unzip `OmniSpatial-test.zip` and let the structure as follows:
 ```
 dataset/
 ├── Complex_Logic/
@@ -105,12 +105,12 @@ Results are written to `result/{model_id}.json`.
 ---
 ## 📊 Leaderboard <a name="leaderboard"></a>
 
-| Rank | Model | Overall ↑ | Dyn. | Interact | Logic | Persp. |
-|------|-------|-----------|------|----------|-------|--------|
-| 🥇 | o3-2025-04-16 | **56.3** | 70.9 | 65.3 | 35.4 | 53.6 |
-| 🥈 | Gemini-2.5-Pro-05-06 | 55.2 | 68.2 | 67.7 | 39.4  | 44.6|
-| 🥉 | Gemini-2.5-Flash-Thinking-05-20 | 53.2 | 69.3 | 64.0 | 35.5 | 45.7 |
-| … | Human (upper-bound) | **92.6** | 96.7 | 95.0 | 89.6 | 96.1 |
+| Rank | Model                           | Overall ↑ | Dyn. | Interact | Logic | Persp. |
+|------|---------------------------------|-----------|------|----------|-------|--------|
+| 🥇   | o3-2025-04-16                   | **56.3**  | 70.9 | 65.3     | 35.4  | 53.6   |
+| 🥈   | Gemini-2.5-Pro-05-06            | 55.2      | 68.2 | 67.7     | 39.4  | 44.6   |
+| 🥉   | Gemini-2.5-Flash-Thinking-05-20 | 53.2      | 69.3 | 64.0     | 35.5  | 45.7   |
+| …    | Human (upper-bound)             | **92.6**  | 95.2 | 93.5     | 87.9  | 94.4   |
 
 *Full table in [our homepage](https://qizekun.github.io/omnispatial/).*
 
