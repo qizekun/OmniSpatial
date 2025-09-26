@@ -122,9 +122,9 @@ OmniSpatial’s 50 fine-grained tasks span dynamic motion prediction, geometric 
 
 ![tasks](./assets/tasks.jpg)
 
-| | Images / Clips | QA Pairs | #Tasks | License |
-|---|---|---|---|---|
-| OmniSpatial | **1 387** | **1 533** | **50** | CC BY-NC 4.0 |
+|                  | Images / Clips | QA Pairs | #Tasks | License |
+|------------------|---|---|---|---|
+| OmniSpatial-test | **1 387** | **1 533** | **50** | CC BY-NC 4.0 |
 
 * **Sources**: Web crawls (MIT-licensed or CC images), driving-test banks, HOI4D, MME
 * **Annotation format**: JSON with fields:
