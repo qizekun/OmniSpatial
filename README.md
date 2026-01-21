@@ -216,4 +216,6 @@ Please check individual images for additional constraints.
 
 ## 🙏 Acknowledgements
 
+We thank the EASI team for their support of OmniSpatial. You may also evaluate OmniSpatial using their official evaluation code via the [EASI-Leaderboard](https://huggingface.co/spaces/lmms-lab-si/EASI-Leaderboard).
+
 This project builds upon open-source efforts including **Segment Anything**, **InstantMesh**, **Qwen-VL**, **InternVL**, and the many contributors of the open-source VLM community. Special thanks to our annotator team for their meticulous QA work.
